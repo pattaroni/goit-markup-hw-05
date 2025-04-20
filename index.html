@@ -66,6 +66,82 @@
           </h1>
           <button type="button" class="button">Order Service</button>
         </div>
+        <div class="modal-overlay is-open">
+          <div class="modal">
+            <button type="button" class="modal-close-btn">
+              <svg width="8" height="8" class="modal-close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <h2 class="modal-header">
+              Leave your contacts and we will call you back
+            </h2>
+            <form
+              class="modal-form"
+              name="modal-window-form"
+              autocomplete="off"
+            >
+              <label class="modal-form-label">
+                Name
+                <svg width="18" height="18" class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input
+                  type="text"
+                  name="modal-form-input"
+                  class="modal-input"
+                  autofocus
+                  required
+                />
+              </label>
+              <label class="modal-form-label">
+                Phone
+                <svg width="18" height="18" class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input
+                  type="tel"
+                  name="modal-form-input"
+                  class="modal-input"
+                  required
+                />
+              </label>
+              <label class="modal-form-label">
+                Email
+                <svg width="18" height="18" class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input
+                  type="email"
+                  name="modal-form-input"
+                  class="modal-input"
+                />
+              </label>
+              <label class="modal-form-label">
+                Comment
+                <textarea
+                  class="modal-input"
+                  name="modal-form-input"
+                  rows="5"
+                  placeholder="Text input"
+                  required
+                ></textarea>
+              </label>
+              <label class="modal-form-label">
+                <input
+                  class="modal-input"
+                  type="checkbox"
+                  name="modal-form-input"
+                  value="I accept the terms and conditions of the Privacy Policy"
+                  required
+                />
+                I accept the terms and conditions of the
+                <a href="" class="modal-link">Privacy Policy</a>
+              </label>
+              <button type="submit" class="modal-send-btn">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- #endregion Section Order -->
       <!-- #region Principles -->
@@ -562,6 +638,30 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-div">
+          <p class="social-p">Subscribe</p>
+          <form class="footer-form" name="footer-form" autocomplete="off">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                name="footer-form-input"
+                placeholder="Email"
+                class="footer-input"
+                required
+              />
+            </label>
+            <label class="footer-form-label">
+              <button type="submit" class="footer-form-btn">
+                <a href="" target="_blank" class="footer-btn-link">
+                  Subscribe
+                  <svg class="footer-form-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </a>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
