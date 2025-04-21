@@ -563,7 +563,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-div">
+        <div class="form-div-footer">
           <p class="social-p">Subscribe</p>
           <form class="footer-form" name="footer-form" autocomplete="off">
             <label class="footer-form-label">
@@ -576,12 +576,10 @@
               />
             </label>
             <button type="submit" class="footer-form-btn">
-              <a href="" target="_blank" class="footer-btn-link">
-                Subscribe
-                <svg class="footer-form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </a>
+              <a href="" target="_blank" class="footer-btn-link"> Subscribe </a>
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -606,7 +604,7 @@
               <input
                 id="user-name"
                 type="text"
-                name="modal-form-input"
+                name="user-name"
                 class="modal-input"
                 autofocus
                 required
@@ -645,7 +643,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-div">
+          <div class="form-div-textarea">
             <label for="user-comment" class="modal-form-label">Comment</label>
             <textarea
               id="user-comment"
@@ -655,7 +653,7 @@
               required
             ></textarea>
           </div>
-          <div class="form-div">
+          <div class="form-div-privacy">
             <input
               id="user-privacy"
               class="visually-hidden"
@@ -665,6 +663,11 @@
               required
             />
             <label for="user-privacy" class="modal-form-label"
+              ><span class="privacy-span">
+                <svg class="privacy-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use></svg></span
               >I accept the terms and conditions of the
               <a href="" class="modal-link">Privacy Policy</a></label
             >
